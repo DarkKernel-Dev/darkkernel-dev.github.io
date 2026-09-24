@@ -7,21 +7,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="DarkKernel — IT Support, Linux, Python, Automation and practical software projects.">
-<meta name="keywords" content="DarkKernel, IT Support, Linux, Python, Automation, System Administration, TGFetch">
-<meta name="author" content="DarkKernel">
+<meta name="description" content="Dark Kernel — IT Support, Linux, Python, Automation and practical software projects.">
+<meta name="keywords" content="Dark Kernel, IT Support, Linux, Python, Automation, System Administration, TGFetch">
+<meta name="author" content="Dark Kernel">
 <meta name="theme-color" content="#05070d">
 
-<meta property="og:title" content="DarkKernel | IT Support & Developer">
+<meta property="og:title" content="Dark Kernel | IT Support & Developer">
 <meta property="og:description" content="IT Support | Linux | Python | Automation">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://darkkernel-dev.github.io/">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DarkKernel | IT Support & Developer">
+<meta name="twitter:title" content="Dark Kernel | IT Support & Developer">
 <meta name="twitter:description" content="IT Support | Linux | Python | Automation">
 
-<title>DarkKernel | IT Support & Developer</title>
+<title>Dark Kernel | IT Support & Developer</title>
 
 <style>
 
@@ -78,6 +78,7 @@ nav{
     top:0;
     left:0;
     right:0;
+
     z-index:100;
 
     background:rgba(5,7,13,.82);
@@ -96,7 +97,7 @@ nav{
 
 
 /* =========================
-   HEADER LOGO
+   LOGO
 ========================= */
 
 .logo{
@@ -151,6 +152,7 @@ nav{
 
 .nav-links a{
     color:#8b949e;
+
     text-decoration:none;
 
     margin-left:22px;
@@ -178,6 +180,9 @@ nav{
     padding-top:68px;
 }
 
+
+/* RAINBOW TITLE */
+
 #rainbow-title{
     font-size:clamp(3.4rem,11vw,8rem);
 
@@ -201,6 +206,16 @@ nav{
     animation-delay:
         calc(var(--i) * -0.14s);
 }
+
+
+/* REAL SPACE BETWEEN DARK AND KERNEL */
+
+.rainbow-space{
+    display:inline-block;
+
+    width:.30em;
+}
+
 
 @keyframes rainbow{
 
@@ -252,6 +267,7 @@ nav{
             0 0 18px rgba(255,20,147,.7);
     }
 }
+
 
 .subtitle{
     margin-top:22px;
@@ -510,6 +526,7 @@ footer{
 
     .logo{
         gap:9px;
+
         font-size:15px;
     }
 
@@ -525,16 +542,20 @@ footer{
     section{
         padding:70px 0;
     }
+
 }
 
 </style>
 
 </head>
 
+
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -551,11 +572,15 @@ footer{
 
     </a>
 
+
     <div class="nav-links">
 
         <a href="#about">About</a>
+
         <a href="#skills">Skills</a>
+
         <a href="#projects">Projects</a>
+
         <a href="#contact">Contact</a>
 
     </div>
@@ -565,51 +590,73 @@ footer{
 </nav>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero">
 
 <div class="container">
+
 
     <h1
         id="rainbow-title"
         aria-label="Dark Kernel">
     </h1>
 
+
     <div class="subtitle">
+
         IT Support | Linux | Python | Automation
+
     </div>
 
+
     <p class="description">
+
         IT Support professional focused on Linux,
         Python, system administration, automation
         and practical software projects.
+
     </p>
 
+
     <div class="buttons">
+
 
         <a
             class="btn primary"
             href="https://github.com/DarkKernel-Dev"
             target="_blank"
             rel="noopener">
+
             GitHub
+
         </a>
+
 
         <a
             class="btn"
             href="mailto:darkkernel.dev@gmail.com">
+
             Email Me
+
         </a>
 
+
     </div>
+
 
 </div>
 
 </header>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about">
 
@@ -618,10 +665,12 @@ footer{
     <h2>About Me</h2>
 
     <p class="about">
+
         I work in IT support and enjoy Linux systems,
         Python development, automation and system
         administration. I build practical tools
         and learn through hands-on projects.
+
     </p>
 
 </div>
@@ -629,7 +678,10 @@ footer{
 </section>
 
 
-<!-- SKILLS -->
+
+<!-- =========================
+     SKILLS
+========================= -->
 
 <section id="skills">
 
@@ -640,13 +692,21 @@ footer{
     <div class="skills">
 
         <span class="skill">🐧 Linux</span>
+
         <span class="skill">🪟 Windows</span>
+
         <span class="skill">🐍 Python</span>
+
         <span class="skill">🔧 IT Support</span>
+
         <span class="skill">⚙️ Automation</span>
+
         <span class="skill">🗄️ SQLite</span>
+
         <span class="skill">🔀 Git</span>
+
         <span class="skill">💻 GitHub</span>
+
         <span class="skill">⚡ Asyncio</span>
 
     </div>
@@ -656,7 +716,10 @@ footer{
 </section>
 
 
-<!-- PROJECT -->
+
+<!-- =========================
+     PROJECT
+========================= -->
 
 <section id="projects">
 
@@ -669,13 +732,18 @@ footer{
         <h3>🚀 TGFetch</h3>
 
         <p>
-            A Telegram Download Manager for Windows
-            and Linux, currently under development.
+
+            A Telegram Download Manager
+            for Windows and Linux,
+            currently under development.
+
         </p>
 
         <p class="tech">
-            Python · PySide6 · Telethon · SQLite ·
-            asyncio · qasync
+
+            Python · PySide6 · Telethon ·
+            SQLite · asyncio · qasync
+
         </p>
 
     </div>
@@ -685,7 +753,10 @@ footer{
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact">
 
@@ -698,7 +769,9 @@ footer{
         📧
 
         <a href="mailto:darkkernel.dev@gmail.com">
+
             darkkernel.dev@gmail.com
+
         </a>
 
     </div>
@@ -708,19 +781,28 @@ footer{
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-    © 2026 DarkKernel
+    © 2026 Dark Kernel
+
     <span class="cursor"></span>
 
 </footer>
 
 
+
+<!-- =========================
+     RAINBOW TITLE
+========================= -->
+
 <script>
 
-(function(){
+(function () {
 
     const title =
         document.getElementById("rainbow-title");
@@ -728,33 +810,54 @@ footer{
     const text =
         "Dark Kernel";
 
-    text.split("").forEach(
-        function(char,index){
 
-            const letter =
+    text.split("").forEach(function (char, index) {
+
+
+        /* REAL SPACE */
+
+        if (char === " ") {
+
+            const space =
                 document.createElement("span");
 
-            letter.className =
-                "rainbow-letter";
+            space.className =
+                "rainbow-space";
 
-            letter.style.setProperty(
-                "--i",
-                index
-            );
+            title.appendChild(space);
 
-            letter.textContent =
-                char === " "
-                    ? "\u00A0"
-                    : char;
-
-            title.appendChild(letter);
-
+            return;
         }
-    );
+
+
+        /* LETTER */
+
+        const letter =
+            document.createElement("span");
+
+
+        letter.className =
+            "rainbow-letter";
+
+
+        letter.style.setProperty(
+            "--i",
+            index
+        );
+
+
+        letter.textContent =
+            char;
+
+
+        title.appendChild(letter);
+
+    });
 
 })();
 
 </script>
+
 
 </body>
 </html>
