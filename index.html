@@ -4,14 +4,10 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="DarkKernel — IT Support, Linux, Python and Automation">
-<title>DarkKernel | IT Support & Developer</title>
+
 <meta name="description" content="DarkKernel — IT Support, Linux, Python, Automation and practical software projects.">
-
 <meta name="keywords" content="DarkKernel, IT Support, Linux, Python, Automation, System Administration, TGFetch">
-
 <meta name="author" content="DarkKernel">
-
 <meta name="theme-color" content="#05070b">
 
 <meta property="og:title" content="DarkKernel | IT Support & Developer">
@@ -23,9 +19,15 @@
 <meta name="twitter:title" content="DarkKernel | IT Support & Developer">
 <meta name="twitter:description" content="IT Support | Linux | Python | Automation">
 
+<title>DarkKernel | IT Support & Developer</title>
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
+html{
+    scroll-behavior:smooth
+}
+
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#05070d;
@@ -33,6 +35,7 @@ body{
     line-height:1.6;
     overflow-x:hidden;
 }
+
 body:before{
     content:"";
     position:fixed;
@@ -43,29 +46,62 @@ body:before{
       linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
     background-size:40px 40px;
 }
-.container{width:min(1080px,calc(100% - 32px));margin:auto}
+
+.container{
+    width:min(1080px,calc(100% - 32px));
+    margin:auto
+}
 
 nav{
     position:fixed;
-    top:0;left:0;right:0;
+    top:0;
+    left:0;
+    right:0;
     z-index:10;
     background:rgba(5,7,13,.8);
     backdrop-filter:blur(14px);
     border-bottom:1px solid #202631;
 }
+
 .nav{
     height:68px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
+
+/* Header Logo */
 .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
     font-weight:900;
-    letter-spacing:.12em;
+    letter-spacing:.08em;
+    color:#fff;
+    text-decoration:none;
+}
+
+.logo img{
+    width:34px;
+    height:34px;
+    object-fit:contain;
+    border-radius:8px;
+}
+
+.logo span{
     color:#fff;
 }
-.nav a{color:#8b949e;text-decoration:none;margin-left:22px;font-size:14px}
-.nav a:hover{color:#fff}
+
+.nav a{
+    color:#8b949e;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:14px
+}
+
+.nav a:hover{
+    color:#fff
+}
 
 .hero{
     min-height:100vh;
@@ -73,12 +109,16 @@ nav{
     align-items:center;
     padding-top:68px;
 }
+
 .prompt{
     font-family:monospace;
     color:#7ee787;
     margin-bottom:16px;
 }
-.prompt span{color:#8b949e}
+
+.prompt span{
+    color:#8b949e
+}
 
 #rainbow-title{
     font-size:clamp(3.4rem,11vw,8rem);
@@ -88,32 +128,74 @@ nav{
     white-space:nowrap;
     min-height:1em;
 }
+
 .rainbow-letter{
     display:inline-block;
     animation:rainbow 2.8s linear infinite;
     animation-delay:calc(var(--i) * -0.14s);
 }
+
 @keyframes rainbow{
-    0%{color:#ff003c;text-shadow:0 0 18px rgba(255,0,60,.7)}
-    14%{color:#ff7a00;text-shadow:0 0 18px rgba(255,122,0,.7)}
-    28%{color:#ffe600;text-shadow:0 0 18px rgba(255,230,0,.7)}
-    42%{color:#20e64b;text-shadow:0 0 18px rgba(32,230,75,.7)}
-    57%{color:#00e5ff;text-shadow:0 0 18px rgba(0,229,255,.7)}
-    71%{color:#2878ff;text-shadow:0 0 18px rgba(40,120,255,.7)}
-    85%{color:#a855f7;text-shadow:0 0 18px rgba(168,85,247,.7)}
-    100%{color:#ff1493;text-shadow:0 0 18px rgba(255,20,147,.7)}
+    0%{
+        color:#ff003c;
+        text-shadow:0 0 18px rgba(255,0,60,.7)
+    }
+
+    14%{
+        color:#ff7a00;
+        text-shadow:0 0 18px rgba(255,122,0,.7)
+    }
+
+    28%{
+        color:#ffe600;
+        text-shadow:0 0 18px rgba(255,230,0,.7)
+    }
+
+    42%{
+        color:#20e64b;
+        text-shadow:0 0 18px rgba(32,230,75,.7)
+    }
+
+    57%{
+        color:#00e5ff;
+        text-shadow:0 0 18px rgba(0,229,255,.7)
+    }
+
+    71%{
+        color:#2878ff;
+        text-shadow:0 0 18px rgba(40,120,255,.7)
+    }
+
+    85%{
+        color:#a855f7;
+        text-shadow:0 0 18px rgba(168,85,247,.7)
+    }
+
+    100%{
+        color:#ff1493;
+        text-shadow:0 0 18px rgba(255,20,147,.7)
+    }
 }
+
 .subtitle{
     margin-top:22px;
     color:#c9d1d9;
     font-size:clamp(1.1rem,3vw,1.5rem);
 }
+
 .description{
     max-width:700px;
     margin-top:14px;
     color:#8b949e;
 }
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:28px
+}
+
 .btn{
     display:inline-block;
     padding:11px 18px;
@@ -124,11 +206,13 @@ nav{
     text-decoration:none;
     transition:.25s;
 }
+
 .btn:hover{
     transform:translateY(-3px);
     border-color:#58a6ff;
     box-shadow:0 10px 30px rgba(88,166,255,.12);
 }
+
 .primary{
     border:0;
     background:linear-gradient(90deg,#635bff,#a855f7,#ec4899);
@@ -138,11 +222,29 @@ section{
     padding:90px 0;
     border-top:1px solid #1b2028;
 }
-h2{font-size:2rem;margin-bottom:28px}
-h2:before{content:"// ";font-family:monospace;color:#58a6ff}
-.about{max-width:760px;color:#8b949e}
 
-.skills{display:flex;flex-wrap:wrap;gap:10px}
+h2{
+    font-size:2rem;
+    margin-bottom:28px
+}
+
+h2:before{
+    content:"// ";
+    font-family:monospace;
+    color:#58a6ff
+}
+
+.about{
+    max-width:760px;
+    color:#8b949e
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px
+}
+
 .skill{
     padding:8px 14px;
     border:1px solid #30363d;
@@ -151,7 +253,11 @@ h2:before{content:"// ";font-family:monospace;color:#58a6ff}
     color:#c9d1d9;
     transition:.25s;
 }
-.skill:hover{transform:translateY(-3px);border-color:#a855f7}
+
+.skill:hover{
+    transform:translateY(-3px);
+    border-color:#a855f7
+}
 
 .card{
     max-width:760px;
@@ -161,13 +267,27 @@ h2:before{content:"// ";font-family:monospace;color:#58a6ff}
     background:linear-gradient(145deg,#111720,#080c13);
     transition:.3s;
 }
+
 .card:hover{
     transform:translateY(-5px);
     border-color:#58a6ff;
 }
-.card h3{margin-bottom:8px;font-size:1.45rem}
-.card p{color:#8b949e}
-.tech{margin-top:16px;color:#7ee787!important;font-family:monospace;font-size:14px}
+
+.card h3{
+    margin-bottom:8px;
+    font-size:1.45rem
+}
+
+.card p{
+    color:#8b949e
+}
+
+.tech{
+    margin-top:16px;
+    color:#7ee787!important;
+    font-family:monospace;
+    font-size:14px
+}
 
 .contact{
     display:inline-block;
@@ -176,7 +296,11 @@ h2:before{content:"// ";font-family:monospace;color:#58a6ff}
     border-radius:10px;
     background:#111720;
 }
-.contact a{color:#58a6ff;text-decoration:none}
+
+.contact a{
+    color:#58a6ff;
+    text-decoration:none
+}
 
 footer{
     padding:35px 0;
@@ -184,6 +308,7 @@ footer{
     color:#6e7681;
     border-top:1px solid #1b2028;
 }
+
 .cursor{
     display:inline-block;
     width:7px;
@@ -192,12 +317,35 @@ footer{
     vertical-align:-.15em;
     animation:blink 1s steps(1) infinite;
 }
-@keyframes blink{50%{opacity:0}}
+
+@keyframes blink{
+    50%{
+        opacity:0
+    }
+}
 
 @media(max-width:650px){
-    .nav-links{display:none}
-    #rainbow-title{font-size:clamp(3rem,17vw,5rem)}
-    section{padding:70px 0}
+
+    .nav-links{
+        display:none
+    }
+
+    .logo img{
+        width:30px;
+        height:30px
+    }
+
+    .logo{
+        font-size:14px;
+    }
+
+    #rainbow-title{
+        font-size:clamp(3rem,17vw,5rem)
+    }
+
+    section{
+        padding:70px 0
+    }
 }
 </style>
 </head>
@@ -206,24 +354,30 @@ footer{
 
 <nav>
 <div class="container nav">
-    <a class="logo" href="#">DK</a>
+
+    <a class="logo" href="#">
+        <img src="darkkernel-dragon-favicon.png" alt="Dark Kernel">
+        <span>Dark Kernel</span>
+    </a>
+
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </div>
+
 </div>
 </nav>
 
 <header class="hero">
 <div class="container">
 
-
-
     <h1 id="rainbow-title" aria-label="DarkKernel"></h1>
 
-    <div class="subtitle">IT Support | Linux | Python | Automation</div>
+    <div class="subtitle">
+        IT Support | Linux | Python | Automation
+    </div>
 
     <p class="description">
         IT Support professional focused on Linux, Python,
@@ -231,12 +385,19 @@ footer{
     </p>
 
     <div class="buttons">
+
         <a class="btn primary"
            href="https://github.com/DarkKernel-Dev"
-           target="_blank" rel="noopener">GitHub</a>
+           target="_blank"
+           rel="noopener">
+            GitHub
+        </a>
 
         <a class="btn"
-           href="mailto:darkkernel.dev@gmail.com">Email Me</a>
+           href="mailto:darkkernel.dev@gmail.com">
+            Email Me
+        </a>
+
     </div>
 
 </div>
@@ -244,19 +405,25 @@ footer{
 
 <section id="about">
 <div class="container">
+
     <h2>About Me</h2>
+
     <p class="about">
         I work in IT support and enjoy Linux systems, Python development,
         automation and system administration. I build practical tools
         and learn through hands-on projects.
     </p>
+
 </div>
 </section>
 
 <section id="skills">
 <div class="container">
+
     <h2>Skills</h2>
+
     <div class="skills">
+
         <span class="skill">🐧 Linux</span>
         <span class="skill">🪟 Windows</span>
         <span class="skill">🐍 Python</span>
@@ -266,34 +433,47 @@ footer{
         <span class="skill">🔀 Git</span>
         <span class="skill">💻 GitHub</span>
         <span class="skill">⚡ Asyncio</span>
+
     </div>
+
 </div>
 </section>
 
 <section id="projects">
 <div class="container">
+
     <h2>Featured Project</h2>
 
     <div class="card">
+
         <h3>🚀 TGFetch</h3>
+
         <p>
             A Telegram Download Manager for Windows and Linux,
             currently under development.
         </p>
+
         <p class="tech">
             Python · PySide6 · Telethon · SQLite · asyncio · qasync
         </p>
+
     </div>
+
 </div>
 </section>
 
 <section id="contact">
 <div class="container">
+
     <h2>Contact</h2>
+
     <div class="contact">
-        📧 <a href="mailto:darkkernel.dev@gmail.com">
-        darkkernel.dev@gmail.com</a>
+        📧
+        <a href="mailto:darkkernel.dev@gmail.com">
+            darkkernel.dev@gmail.com
+        </a>
     </div>
+
 </div>
 </section>
 
@@ -303,16 +483,23 @@ footer{
 
 <script>
 (function () {
+
     const title = document.getElementById("rainbow-title");
     const text = "DarkKernel";
 
     text.split("").forEach(function (char, index) {
+
         const letter = document.createElement("span");
+
         letter.className = "rainbow-letter";
         letter.style.setProperty("--i", index);
-        letter.textContent = char === " " ? "\u00A0" : char;
+        letter.textContent =
+            char === " " ? "\u00A0" : char;
+
         title.appendChild(letter);
+
     });
+
 })();
 </script>
 
